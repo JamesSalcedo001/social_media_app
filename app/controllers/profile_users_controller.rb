@@ -1,8 +1,9 @@
 class ProfileUsersController < ApplicationController
+    skip_before_action :authenticate_user, only: [:create]
 
     def show
-        user = ProfileUser.find_by(id: params[:id])
-        render json: user, status: :ok
+        # user = ProfileUser.find_by(id: params[:id])
+        render json: current_user, status: :ok
     end
 
     def create
