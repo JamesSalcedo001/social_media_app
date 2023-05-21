@@ -51,3 +51,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.image {
+  border-radius: 36vh;
+  height: 15vh;
+}
