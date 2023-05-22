@@ -29,7 +29,12 @@
 function MessageCard() {
 
     return (
-        <div>Welcome!</div>
+        <div>
+            {/* <ul>
+                <li>From: Jim1--  Hi James!</li>
+                <li>Hey Jim! How are you? --Sent By You</li>
+            </ul> */}
+        </div>
     )
 }
 

@@ -1,10 +1,25 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-logo {
-  height: 40vmin;
+  margin-top: 10vh;
+  height: 15vmin;
   pointer-events: none;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,10 +37,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -46,7 +57,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
-  color: whitesmoke;
 }
 
 code {
@@ -59,10 +69,50 @@ code {
   height: 15vh;
 }
 
-button {
-  border-radius: 30vw;
-  margin:auto;
+.home-button {
+  border-radius: 1.6vh;
+  margin-bottom: 5vh;
+  min-width: 200px;
+  line-height: 1.1em;
+  padding: 0.5em;
   color: rgb(218, 223, 228);
+  font-weight: bolder;
   font-size: x-large;
-  background-color: #315fbd;
+  background-color: rgb(83, 115, 241);
+}
+
+.form {
+  color: rgb(218, 223, 228);
+  text-align: center;
+  width: 100%;
+  padding: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  border-radius: 3vh;
+}
+
+.formInput {
+  padding: 2vh;
+  border-radius: 2vh;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  font-weight: bolder;
+  font-size: x-large;
+  background-color: rgb(83, 115, 241);
+  color: rgb(218, 223, 228);
+
+}
+
+#profile {
+  color: white;
+}
+
+#headerSection {
+  background-color: rgb(17, 108, 220);
+  width: 100vw;
+  position: absolute;
+  top: 0;
 }

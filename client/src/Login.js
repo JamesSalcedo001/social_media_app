@@ -46,12 +46,12 @@ function Login({updateUser}) {
 
     return (
         <div>
-            <form onSubmit={submit}>
+            <form className="form" onSubmit={submit}>
                 <label htmlFor="username">Username</label>
-                <input type="text" value={username} onChange={changeHandler} name="username"/>
+                <input className="formInput" type="text" value={username} onChange={changeHandler} name="username"/>
                 <label htmlFor="password">Password</label>
-                <input type="password" value={password} onChange={changeHandler} name="password"/>
-                <input type="submit" value="Login!"/>
+                <input className="formInput" type="password" value={password} onChange={changeHandler} name="password"/>
+                <input className="formInput" type="submit" value="Login!"/>
             </form>
             {errors ? <div>{errors}</div> : null}
         </div>

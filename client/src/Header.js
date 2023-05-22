@@ -12,8 +12,8 @@ function Header({currentUser, updateUser}) {
     }
 
     return (
-        <div>
-            {currentUser ? <button onClick={logout}>Logout</button> : null}
+        <div id="headerSection">
+            {currentUser ? <button className="formInput" onClick={logout}>Logout</button> : null}
         </div>
     )
 }
