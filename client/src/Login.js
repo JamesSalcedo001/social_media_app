@@ -51,7 +51,7 @@ function Login({updateUser}) {
                 <input className="formInput" type="text" value={username} onChange={changeHandler} name="username"/>
                 <label htmlFor="password">Password</label>
                 <input className="formInput" type="password" value={password} onChange={changeHandler} name="password"/>
-                <input className="formInput" type="submit" value="Login!"/>
+                <input className="login" type="submit" value="Login!"/>
             </form>
             {errors ? <div>{errors}</div> : null}
         </div>

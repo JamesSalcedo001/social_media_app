@@ -10,8 +10,9 @@
 
 .App-logo {
   margin-top: 10vh;
-  height: 15vmin;
+  height: 40vmin;
   pointer-events: none;
+  margin-bottom: 20vh ;
 }
 
 #home {
@@ -66,42 +67,43 @@ code {
 
 .image {
   border-radius: 36vh;
-  height: 15vh;
+  height: 25vh;
 }
 
 .home-button {
   border-radius: 1.6vh;
-  margin-bottom: 5vh;
   min-width: 200px;
   line-height: 1.1em;
-  padding: 0.5em;
+  padding: 0.4em;
   color: rgb(218, 223, 228);
   font-weight: bolder;
   font-size: x-large;
   background-color: rgb(83, 115, 241);
+  margin-bottom: 5vh;
 }
 
 .form {
   color: rgb(218, 223, 228);
   text-align: center;
-  width: 100%;
-  padding: 1vh;
+  font-weight: bolder;
+  font-size: large;
+  padding: 1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: cornflowerblue;
+  background-color:rgb(83, 115, 241);
   border-radius: 3vh;
 }
 
 .formInput {
-  padding: 2vh;
+  padding: 1vw;
   border-radius: 2vh;
   margin-top: 3vh;
   margin-bottom: 2vh;
   font-weight: bolder;
-  font-size: x-large;
-  background-color: rgb(83, 115, 241);
+  font-size: large;
+  background-color: rgb(112, 156, 239);
   color: rgb(218, 223, 228);
 
 }
@@ -111,8 +113,23 @@ code {
 }
 
 #headerSection {
-  background-color: rgb(17, 108, 220);
+  background-color: rgb(14, 21, 129);
   width: 100vw;
   position: absolute;
   top: 0;
+}
+
+.login {
+  padding: 1vw;
+  border-radius: 2vh;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  font-weight: bolder;
+  font-size: large;
+  background-color: rgb(7, 9, 67);
+  color: rgb(218, 223, 228);
+}
+
+#username {
+  margin-top: 10vh;
 }
