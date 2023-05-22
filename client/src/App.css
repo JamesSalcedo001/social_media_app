@@ -45,6 +45,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: whitesmoke;
 }
 
 code {
@@ -55,4 +57,12 @@ code {
 .image {
   border-radius: 36vh;
   height: 15vh;
+}
+
+button {
+  border-radius: 30vw;
+  margin:auto;
+  color: rgb(218, 223, 228);
+  font-size: x-large;
+  background-color: #315fbd;
 }

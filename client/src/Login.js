@@ -1,10 +1,13 @@
 import {useState} from "react"
+import { useHistory } from "react-router-dom"
 
-function Login() {
+function Login({updateUser}) {
     const [formData, setFormData] = useState({
         username: "",
         password: ""
     })
+    let history = useHistory();
+
 
     const [errors, setErrors] = useState([])
     const {username, password} = formData
@@ -13,7 +16,7 @@ function Login() {
         const {name, value} = e.target
         setFormData({...formData, [name]: value})
     }
-
+ 
     function submit(e) {
         e.preventDefault()
         const user = {
@@ -32,6 +35,7 @@ function Login() {
             if (res.ok) {
                 res.json().then(user => {
                     updateUser(user)
+                    history.push(`/profile_users/${user.id}`)
                 })
             } else {
                 res.json().then(data => setErrors(data.errors))
@@ -44,9 +48,9 @@ function Login() {
         <div>
             <form onSubmit={submit}>
                 <label htmlFor="username">Username</label>
-                <input type="text" value={username} onChange={changeHandler} name=""/>
+                <input type="text" value={username} onChange={changeHandler} name="username"/>
                 <label htmlFor="password">Password</label>
-                <input type="password" value={password} onChange={changeHandler} name=""/>
+                <input type="password" value={password} onChange={changeHandler} name="password"/>
                 <input type="submit" value="Login!"/>
             </form>
             {errors ? <div>{errors}</div> : null}

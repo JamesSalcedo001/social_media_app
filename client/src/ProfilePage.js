@@ -1,6 +1,7 @@
 import MessageChat from "./MessageChat";
 
-function ProfilePage() {
+function ProfilePage({currentUser}) {
+    console.log(currentUser)
     return (
         <div>
             <MessageChat/>
