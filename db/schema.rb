@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_05_23_052945) do
+ActiveRecord::Schema.define(version: 2023_05_24_013545) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,18 @@ ActiveRecord::Schema.define(version: 2023_05_23_052945) do
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.string "body"
+    t.string "image"
+    t.string "to"
+    t.bigint "profile_users_id"
+    t.bigint "chats_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["chats_id"], name: "index_messages_on_chats_id"
+    t.index ["profile_users_id"], name: "index_messages_on_profile_users_id"
   end
 
   create_table "profile_users", force: :cascade do |t|
