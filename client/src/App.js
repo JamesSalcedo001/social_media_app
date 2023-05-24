@@ -97,11 +97,11 @@ const updateUser = (user) => setCurrentUser(user)
             <Login updateUser={updateUser}/>
           </Route>
 
-          <Route path="/profile_users/new">
+          <Route path="/profile_userss/new">
             <Signup updateUser={updateUser}/>
           </Route>
 
-          <Route path="/profile_users/:id">
+          <Route path="/profile_userss/:id">
             <ProfilePage currentUser={currentUser}/>
           </Route>
 

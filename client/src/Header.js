@@ -13,7 +13,6 @@ function Header({currentUser, updateUser}) {
 
     return (
         <div id="headerSection">
-            <h1>hello</h1>
             {currentUser ? <button className="formInput" onClick={logout}>Logout</button> : null}
         </div>
     )
