@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :chats, only: [:index, :create, :destroy, :update]
   resources :profile_users, only: [:show, :create]
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"

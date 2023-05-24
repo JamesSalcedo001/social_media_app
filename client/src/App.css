@@ -12,7 +12,7 @@
   margin-top: 10vh;
   height: 40vmin;
   pointer-events: none;
-  margin-bottom: 20vh ;
+  margin-bottom: 20vh;
 }
 
 #home {
@@ -75,15 +75,22 @@ code {
   min-width: 200px;
   line-height: 1.1em;
   padding: 0.4em;
-  color: rgb(218, 223, 228);
+  color: rgb(12, 173, 222);
   font-weight: bolder;
   font-size: x-large;
-  background-color: rgb(83, 115, 241);
+  background-color: rgb(10, 41, 70);
   margin-bottom: 5vh;
+  transition: 0.3s;
+}
+
+.home-button:hover {
+  translate: -5px -5px -5px;
+  text-shadow: 5px 10px 5px rgb(22, 180, 212);
+  box-shadow: -4px 5px 25px rgb(249, 249, 249);
 }
 
 .form {
-  color: rgb(218, 223, 228);
+  color:rgb(12, 173, 222);
   text-align: center;
   font-weight: bolder;
   font-size: large;
@@ -92,7 +99,7 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color:rgb(83, 115, 241);
+  background-color:rgb(10, 41, 70);
   border-radius: 3vh;
 }
 
@@ -127,7 +134,7 @@ code {
   font-weight: bolder;
   font-size: large;
   background-color: rgb(7, 9, 67);
-  color: rgb(218, 223, 228);
+  color: rgb(12, 173, 222);
 }
 
 #username {

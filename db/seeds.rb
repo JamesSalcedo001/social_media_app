@@ -8,3 +8,4 @@
 
 # ProfileUser.create!(username: "JamesSalcedo001", password: "test", avatar: "https://images.squarespace-cdn.com/content/v1/54b7b93ce4b0a3e130d5d232/1519987020970-8IQ7F6Z61LLBCX85A65S/icon.png?format=1000w", admin: true)
 
+# Chat.create!(title: "Starbucks", image: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-3402c4f.jpg?quality=90&resize=500,454")

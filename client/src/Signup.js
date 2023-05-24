@@ -51,10 +51,13 @@ function Signup({updateUser}) {
             <form className="form" onSubmit={submit}>
                 <label htmlFor="username">Username</label>
                 <input className="formInput" type="text" value={username} onChange={changeHandler} name="username"/>
+
                 <label htmlFor="password">Password</label>
                 <input className="formInput" type="password" value={password} onChange={changeHandler} name="password"/>
+
                 <label htmlFor="avatar">Avatar</label>
                 <input className="formInput" type="text" value={avatar} onChange={changeHandler} name="avatar"/>
+                
                 <input className="login" type="submit" value="Sign Up!"/>
             </form>
             {errors ? <div>{errors}</div> : null}

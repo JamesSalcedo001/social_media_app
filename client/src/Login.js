@@ -49,8 +49,10 @@ function Login({updateUser}) {
             <form className="form" onSubmit={submit}>
                 <label htmlFor="username">Username</label>
                 <input className="formInput" type="text" value={username} onChange={changeHandler} name="username"/>
+
                 <label htmlFor="password">Password</label>
                 <input className="formInput" type="password" value={password} onChange={changeHandler} name="password"/>
+
                 <input className="login" type="submit" value="Login!"/>
             </form>
             {errors ? <div>{errors}</div> : null}
