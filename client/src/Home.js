@@ -8,7 +8,7 @@ function Home() {
             <NavLink to="/login">
                 <button className="home-button">Login!</button>
             </NavLink>
-            <NavLink to="/profile_userss/new">
+            <NavLink to="/profiles/new">
                 <button className="home-button">Signup!</button>
             </NavLink>
 
