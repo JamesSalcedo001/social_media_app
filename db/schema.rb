@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_05_24_013545) do
+ActiveRecord::Schema.define(version: 2023_05_24_050114) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,14 +24,14 @@ ActiveRecord::Schema.define(version: 2023_05_24_013545) do
 
   create_table "messages", force: :cascade do |t|
     t.string "body"
-    t.string "image"
     t.string "to"
-    t.bigint "profile_users_id"
-    t.bigint "chats_id"
+    t.string "image"
+    t.bigint "profile_user_id", null: false
+    t.bigint "chat_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["chats_id"], name: "index_messages_on_chats_id"
-    t.index ["profile_users_id"], name: "index_messages_on_profile_users_id"
+    t.index ["chat_id"], name: "index_messages_on_chat_id"
+    t.index ["profile_user_id"], name: "index_messages_on_profile_user_id"
   end
 
   create_table "profile_users", force: :cascade do |t|
@@ -41,4 +41,6 @@ ActiveRecord::Schema.define(version: 2023_05_24_013545) do
     t.boolean "admin"
   end
 
+  add_foreign_key "messages", "chats"
+  add_foreign_key "messages", "profile_users"
 end

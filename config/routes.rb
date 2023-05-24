@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  resources :messages
+  resources :messages, only: [:index, :create]
   resources :chats, only: [:index, :create, :destroy, :update]
   resources :profile_users, only: [:show, :create]
   post "/login", to: "sessions#create"
