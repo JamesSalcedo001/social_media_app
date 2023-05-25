@@ -1,6 +1,5 @@
 class ChatsController < ApplicationController
     before_action :find_chat, only: [:update, :destroy]
-    skip_before_action :authenticate_user, only: [:create, :index, :destroy, :update]
     
     def index
         render json: Chat.all, status: :ok

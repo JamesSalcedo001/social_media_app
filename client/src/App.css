@@ -68,6 +68,7 @@ code {
 .image {
   border-radius: 36vh;
   height: 25vh;
+  margin-top: 20vh;
 }
 
 .home-button {
@@ -139,4 +140,22 @@ code {
 
 #username {
   margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.chatCards {
+  font-size: large;
+  color: white;
+  background-color: rgb(62, 110, 174);
+  margin-bottom: 5vh;
+  min-width: 90vw;
+  height: max-content;
+  border-radius: 3vh;
+  padding: 1vh;
+}
+
+.chatImage {
+  height: 12vh;
+  width: 12vh;
+  border-radius: 3vh;
 }

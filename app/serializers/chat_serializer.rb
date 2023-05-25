@@ -1,3 +1,5 @@
 class ChatSerializer < ActiveModel::Serializer
-  attributes :id, :title, :image
+  attributes :title, :image, :id
+  has_many :messages
+  has_many :profile_users, through: :messages
 end

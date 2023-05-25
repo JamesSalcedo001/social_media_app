@@ -1,19 +1,19 @@
 class MessagesController < ApplicationController
     skip_before_action :authenticate_user
-
+    
     def create
         message = Message.create!(message_params)
         render json: message, status: :ok
     end
 
     def index
-        message = Message.all
-        render json: message
+        messages = Message.all
+        render json: messages, status: :ok
     end
 
-    private
+    private 
 
     def message_params
-        params.permit(:body, :image, :to)
+        params.permit(:sent_to, :body, :profile_user_id, :chat_id)
     end
 end

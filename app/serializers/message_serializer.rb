@@ -1,9 +1,5 @@
 class MessageSerializer < ActiveModel::Serializer
-  attributes :body, :profile_user, :image, :chat
+  attributes :body, :profile_user_id, :chat_id, :sent_to
   has_one :profile_user
   has_one :chat
-
-  # def chat
-  #   {title:self.chat.title}
-  # end
 end

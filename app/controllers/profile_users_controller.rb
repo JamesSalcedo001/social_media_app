@@ -6,6 +6,11 @@ class ProfileUsersController < ApplicationController
         render json: current_user, status: :ok
     end
 
+    def index
+        users = ProfileUser.all
+        render json: users, status: :ok
+    end
+
     def create
         user = ProfileUser.create!(profile_user_params)
         session[:user_id] = user.id

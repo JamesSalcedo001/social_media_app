@@ -69,6 +69,8 @@ import Signup from './Signup';
 import Login from './Login';
 import {Route, Switch} from "react-router-dom"
 import Home from './Home';
+import CreateChat from './CreateChat';
+import MessageChat from './MessageChat';
 
 
 function App() {
@@ -84,7 +86,7 @@ useEffect(() => {
     }
   })
 },[])
-console.log(currentUser)
+// console.log(currentUser)
 
 const updateUser = (user) => setCurrentUser(user)
 
@@ -103,6 +105,14 @@ const updateUser = (user) => setCurrentUser(user)
 
           <Route path="/profiles/:id">
             <ProfilePage currentUser={currentUser}/>
+          </Route>
+
+          <Route path="/chat/new">
+            <CreateChat/>
+          </Route>
+
+          <Route path="/chats_list">
+            <MessageChat/>
           </Route>
 
           <Route exact path="/">
