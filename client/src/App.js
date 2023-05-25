@@ -86,7 +86,7 @@ useEffect(() => {
     }
   })
 },[])
-// console.log(currentUser)
+console.log(currentUser)
 
 const updateUser = (user) => setCurrentUser(user)
 

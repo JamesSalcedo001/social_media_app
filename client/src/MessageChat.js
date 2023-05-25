@@ -1,5 +1,6 @@
 import MessageCard from "./MessageCard";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 function MessageChat() {
     const [chats, setChats] = useState([])
 
@@ -16,7 +17,9 @@ function MessageChat() {
     return (
         <div>
             <ul>
+            {/* <Navlink to=""> */}
                 {c}
+            {/* </Navlink> */}
             </ul>
             <MessageCard/>
         </div>
